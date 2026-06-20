@@ -3,6 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>Bokkor x69 | SMS BOMBER</title>
+  <meta property="og:image" content="https://files.catbox.moe/zlfb3e.jpg">
+  <meta name="author" content="Bokkor x69">
+  <meta property="og:title" content="Bokkor x69 - sms boomber"> 
+<meta property="og:description" content=" ⁓ MY STORY IN A FRAME ⁓ ✨- Web Developer & Cybersecurity Expert">
+            <meta name="twitter:card" content="summary_large_image">
+            <link rel="icon" href="" type="image/png">
+             <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Bokkor x69",
+    "url": "https://noob-x69.onrender.com/",
+    "logo": "https://files.catbox.moe/zlfb3e.jpg",
+    "sameAs": [
+      "https://github.com/bokkor-69",
+      "https://www.facebook.com/Bokkor.bbz",
+      "https://wa.me/8801337310528"
+    ]
+  }
+  </script>
+
+  <meta name="robots" content="index, follow">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
 <style>
 * {
@@ -534,7 +557,9 @@ attackBtn.addEventListener('click', async () => {
 
     isActive = true;
     attackBtn.disabled = true;
-    stopBtn.disabled = true;
+    // stopBtn.disabled = true;   // ← মুছে ফেললাম
+    // অথবা stopBtn.disabled = false;  // ← যদি রাখতে চান
+
     attackBtn.innerText = '🔥 BOMBING ACTIVE 🔥';
     statusSpan.innerHTML = `⚡ ATTACKING +88${rawPhone}`;
 
@@ -545,7 +570,6 @@ attackBtn.addEventListener('click', async () => {
     attackBtn.innerText = '💀 SUBMIT & AGAIN 💀';
     isActive = false;
 });
-
 /* Stop button handler */
 stopBtn.addEventListener('click', async () => {
     if(isActive){
